@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Unit converter</title>
+
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+		<link rel="shortcut icon" href="IMG/Favicon.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body class="grey lighten-5">
+		<div id="unit-converter" class="container white card">
+			<div class="row">
+				<div class="col s12">
+					<ul class="tabs">
+       						<li class="tab col s3"><a class="active" href="#1">Type</a></li>
+    						<li class="tab col s3"><a href="#2">Known measurement</a></li>
+        					<li class="tab col s3"><a href="#3">Covert to</a></li>
+						<li class="tab col s3"><a href="#4" onclick="convert()">Conversion</a></li>
+      					</ul>
+
+
+					<div id="1" class="input-field col s12">
+  						<select id="type" onchange="changeType()">
+    							<option value="" disabled selected>Choose your option</option>
+     							<option value="Area">Area</option>
+							<option value="Data Transfer Rate">Data Transfer Rate</option>
+							<option value="Digital Storage">Digital Storage</option>
+							<option value="Energy">Energy</option>
+							<option value="Frequency">Frequency</option>
+							<option value="Fuel Economy">Fuel Economy</option>
+							<option value="Length">Length</option>
+							<option value="Mass">Mass</option>
+							<option value="Plane Angle">Plane Angle</option>
+							<option value="Pressure">Pressure</option>
+							<option value="Speed">Speed</option>
+							<option value="Temperature">Temperature</option>
+							<option value="Time">Time</option>
+							<option value="Volume">Volume</option>
+	    					</select>
+	    					<label>Type of measurement</label>
+					</div>
+
+					<div id="2" class="col s12">
+						<div class="input-field col s6 m8">
+          						<input id="val1" type="number">
+          						<label for="val1">Measurement one</label>
+						</div>
+						<div class="input-field col s6 m4">
+							<select id="unit1">
+								<option value="" disabled selected> Choose your option</option>
+							</select>
+						</div>
+       					</div>
+
+					<div id="3" class="col s12">
+          					<div class="input-field col s12">
+							<select id="unit2">
+								<option value="" disabled selected> Choose your option</option>
+							</select>
+						</div>
+       					</div>
+
+					<div id="4" class="col s12">
+          					
+       					</div>
+ 				 </div>
+			</div>
+			<div class="row">
+				<div class="col s2 right">
+					<a href="#" onclick="next()" class="waves-effect waves-light btn right">Next</a>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
